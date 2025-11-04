@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+	color-scheme: light dark;
+}
+
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(to right, #f9fafb 0%, #6b7280 100%);
+	color: #111827;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container-app {
+	max-width: 80rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+html.dark body {
+	background: #444444 !important;
+	color: #ffffff !important;
+}
+
+html.dark .rounded-2xl.bg-white {
+	background-color: #444444 !important;
+	border-color: #374151 !important;
+	color: #ffffff !important;
+}
+
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-gray-600,
+html.dark .text-gray-500 {
+	color: #ffffff !important;
+}
+
+html.dark .text-gray-400 {
+	color: #d1d5db !important;
+}
+
+html.dark .card-shadow {
+	box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.dark .hourly-card {
+	background: #373636 !important;
+	background-image: none !important;
+}
+
+.wind-icon {
+	filter: brightness(0) saturate(100%) invert(60%) sepia(100%) saturate(2000%) hue-rotate(180deg) brightness(1) contrast(1);
+}
+
+html.dark .search-input {
+	background-color: #444444 !important;
+	border-color: #444444 !important;
+}
+
+html.dark .search-suggestions {
+	background-color: #444444 !important;
+	border-color: #444444 !important;
+}
+
+html.dark .suggestion-item:hover {
+	background-color: #525252 !important;
+}
